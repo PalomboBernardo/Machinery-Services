@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Agro Maq - reservas</title>
+    <link rel="shortcut icon" href="../assets/agromaq.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="left-image">
+                <img src="../assets/agromaq.jpg" alt="El logo de Servicios Agro Maq"> 
+            </a>       
+            <h1>Servicios Agro Maq</h1>
+            <a href="../index.html"  class="right-image">
+                <img src="../assets/agromaq.jpg"alt="El logo de Servicios Agro Maq"> 
+            </a>   
+                
+        </div>
+        <nav> 
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="../pages/reservas.html" class="reservas">Reservas</a>
+                    </li>                
+                </ul>
+                <ul>
+                    <li>
+                        <a href="../pages/contratista.html" class="reservas">Contratista</a>
+                    </li>
+                </ul>            
+                <ul>
+                    <li>
+                        <a href="../pages/productor.html" class="reservas">Productor</a>
+                    </li>
+                </ul>    
+                <ul>
+                    <li>
+                        <a href="../pages/nosotros.html" class="reservas" >Nosotros</a>
+                    </li>
+                </ul>    
+            </div>
+        </nav>
+        <h2>Realiza tu reserva con anticipacion</h2>
+    </header>
+
+    <main>
+        <form>
+            <div>
+                <label>Nombre</label>
+                <input type="text" placeholder="facundo">
+            </div>
+
+            <div>
+                <label>Apellido</label>
+                <input type="text" placeholder="quiroga">
+            </div>
+
+            <div>
+                <label>telefono</label>
+                <input type="number" placeholder="3472454545" required>
+            </div>
+
+            <div>
+                <label>Nombre de la firma</label>
+                <input type="text" placeholder="panchito sa">
+            </div>
+
+            <div>
+                <label>CUIT</label>
+                <input type="number" placeholder="*-********-*" required>
+            </div>
+            <div>
+                <label>Cantiad de Hectareas</label>
+                <input type="number" placeholder="numero" required>
+            </div>
+            <div>
+                <label>Provincia/ciudad o pueblo</label>
+                <input type="text" placeholder="Cordoba/villa maria" required>
+            </div>
+
+            <div>
+                <label>fecha</label>
+                <input type="datetime-local">
+                    <select>
+                        <option>cosechadora</option>
+                        <option>pulverizadora</option>
+                        <option>sembradora</option>
+                    </select>
+            </div>
+
+            <div>
+                <label for="archivo">Adjuntar archivo kml</label>
+                <input type="file" id="archivo" name="archivo">
+            </div>
+
+                <button type="submit">Enviar</button>
+                
+        </form>
+            <section class="img-whatsapp">                
+                <a href="http://wa.me/5493472580898" target="_blank">
+                    <img src="../assets/whatsapp.png">  
+                </a>   
+            </section>   
+        <p class="kml-titulo">Como generar el kml o kmz</p>
+        <video class="kml" src="../assets/Cómo generar un archivo KMZ en Google Earth para compartir.mp4" controls>Como generar el kml o kmz
+        </video>
+    </main>
+    <footer class="footer-container">
+    <p class="derechos">2025 Servicios Agro Maq. Todos los derechos reservados.</p>
+    <p class="dueño">Creado por Palombo</p>
+    <nav class="social">
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank" title="Visítanos en Facebook">
+            <img src="../assets/facebook-box-fill.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank" title="Visítanos en Instagram">
+            <img src="../assets/instagram-line.png" alt="Instagram">
+        </a>
+        <a href="https://x.com/?lang=es" target="_blank" title="Visítanos en Twitter">
+            <img src="../assets/twitter-line.png" alt="Twitter">
+        </a>
+    </nav>
+</footer>
+
+</body>
+</html>

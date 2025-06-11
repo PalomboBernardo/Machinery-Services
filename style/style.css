@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-size: 35px;
+    display: grid;
+    place-items: center;
+    text-decoration:underline;
+    text-transform: uppercase;
+    font-family: "Ultra", serif;
+}
+h2{
+    font-size: 30px;
+    display: grid;
+    place-items: center;
+    text-decoration: underline;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    }
+
+.reservas{
+    font-size: 15px;
+    font-family: "Ultra", serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+
+a:hover{
+    color: rgb(24, 100, 145);
+}
+
+.header-container {
+    display: flex; 
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacia los elementos, empujando las imágenes hacia los extremos */
+}
+
+.left-image img, .right-image img {
+    width: 150px; /* Fija la anchura de las imágenes a 250px */
+    height: auto; /* Mantiene la relación de aspecto */
+    margin: 0;
+}
+
+.header-container h1 {
+    margin: 0 20px; /* Espacio alrededor del texto, si se desea */
+    flex-grow: 1; /* Permite que el h1 use el espacio disponible */
+    text-align: center; /* Centra el texto del h1 en su espacio */
+}
+
+section {
+    display: inline-block; /* Permite alinear secciones en horizontal */
+    text-align: center; /* Centra el contenido dentro de cada sección */
+    margin: 10px; /* Espacio entre las secciones */
+}
+
+section img {
+    width: 220px; /* Ajusta el tamaño de la imagen a 200px (o el tamaño deseado) */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    max-width: 100%; /* Asegura que la imagen no desborde su contenedor */
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es limitado */
+    background-color:gray ;
+}
+.img-maquinas {
+position: relative;
+display:inline-block;
+text-align: center; /* Para centrar el texto */
+}
+.texto-pulverizadora {
+position: absolute;
+top: 7rem; 
+left: 20px; /* Ajusta la posición del texto */
+font-size: 30px;
+color:rgb(247, 242, 242);
+font-family: Arial, Helvetica, sans-serif;
+}
+.texto-sembradora {
+position: absolute;
+top: 70px; 
+left: 20px; /* Ajusta la posición del texto */
+font-size: 30px;
+color:rgb(250, 247, 247);
+font-family: Arial, Helvetica, sans-serif;
+}
+.texto-cosechadora {
+position: absolute;
+top: 160px; 
+right: 30px; /* Ajusta la posición del texto */
+font-size: 30px;
+color:rgb(248, 246, 246);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f2f2f2; 
+}
+
+.derechos {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.social a {
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+.social img {
+    width: 24px; /* ajusta según tu necesidad */
+    height: 24px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+form {
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+        }
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+        }
+
+input, select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+        }
+
+li {
+    list-style-type:none;
+    padding: 10px;
+    background-color: #95c09f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+        }
+
+
+.img-whatsapp {
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+        }
+.img-whatsapp img {
+    width: 60px;
+    height: 60px;
+        }
+
+video.kml {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    }
+
+header p{
+    font-size: 1.2rem;
+    display: grid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
+
+.kml-titulo{
+    font-size: 1.2rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: fantasy;
+    color:rgb(8, 8, 8);
+    text-decoration: underline;    
+}
+
+@media (max-width:1030px) {
+    h1{
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+    text-decoration:underline;
+    text-transform: uppercase;
+    font-family: "Ultra", serif;
+}
+h2{
+    font-size: 15px;
+    display: grid;
+    place-items: center;
+    text-decoration: underline;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    }
+.reservas{
+    font-size: 10px;
+    font-family: "Ultra", serif;
+}
+
+section img {
+    width: 190px; /* Ajusta el tamaño de la imagen a 200px (o el tamaño deseado) */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    max-width: 100%;
+    }
+.texto-pulverizadora {
+position: absolute;
+top: 6rem; 
+left: 20px; /* Ajusta la posición del texto */
+font-size: 20px;
+color:rgb(247, 242, 242);
+font-family: Arial, Helvetica, sans-serif;
+}
+.texto-sembradora {
+position: absolute;
+top: 4rem; 
+left: 20px; /* Ajusta la posición del texto */
+font-size: 20px;
+color:rgb(250, 247, 247);
+font-family: Arial, Helvetica, sans-serif;
+}
+.texto-cosechadora {
+position: absolute;
+top: 8rem; 
+right: 30px; /* Ajusta la posición del texto */
+font-size: 20px;
+color:rgb(248, 246, 246);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background-color: #f2f2f2; 
+}
+
+.derechos {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #333;
+}
+}
