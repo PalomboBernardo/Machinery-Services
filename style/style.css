@@ -204,7 +204,7 @@ header p{
     text-decoration: underline;    
 }
 
-@media (max-width:1030px) {
+@media (max-width:992px) {
     h1{
     font-size: 25px;
     display: grid;
