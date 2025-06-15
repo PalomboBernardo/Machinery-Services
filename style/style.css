@@ -12,6 +12,7 @@ h1{
     text-decoration:underline;
     text-transform: uppercase;
     font-family: "Ultra", serif;
+    font-weight: 25;
 }
 h2{
     font-size: 30px;
