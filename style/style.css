@@ -6,7 +6,7 @@
 
 
 h1{
-    font-size: 35px;
+    font-size: 50px;
     display: grid;
     place-items: center;
     text-decoration:underline;
@@ -22,7 +22,8 @@ h2{
 }
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3rem;
     }
 
 .reservas{
@@ -38,6 +39,9 @@ a {
 
 a:hover{
     color: rgb(24, 100, 145);
+}
+a:active{
+    color: rgb(0, 225, 255);
 }
 
 .header-container {
@@ -153,16 +157,26 @@ label {
 input, select {
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 8px solid #ccc;
     width: 100%;
         }
+
+.filled{
+    color: green;
+}
+
+select{
+    color:brown;
+}
+option{
+    color:blue;
+}
 
 li {
     list-style-type:none;
     padding: 10px;
     background-color: #95c09f;
     color: white;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
