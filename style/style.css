@@ -16,19 +16,39 @@ h1{
 }
 h2{
     font-size: 30px;
+    color: bisque;
     display: grid;
     place-items: center;
     text-decoration: underline;
 }
+
 .container{
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    border: black;
+    }
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    list-style-type:none;
+    padding: 10px;
+    margin: 15px;
+    background-color: #3cca7cd2;    
+    cursor: pointer;
+    margin: 10px;
+    border: 2px solid rgb(1, 1, 10); /* Borde derecho doble y azul */
     }
 
 .reservas{
     font-size: 15px;
     font-family: "Ultra", serif;
+    color: black;
 }
 
 a {
@@ -38,12 +58,14 @@ a {
 }
 
 a:hover{
-    color: rgb(24, 100, 145);
-}
-a:active{
-    color: rgb(0, 225, 255);
+    color: rgb(250, 5, 168);
 }
 
+a:hover {
+    background-color: lightblue;
+    padding: 10px;
+}
+    
 .header-container {
     display: flex; 
     align-items: center; /* Alinea verticalmente el contenido */
@@ -81,33 +103,33 @@ body {
     background-color:gray ;
 }
 .img-maquinas {
-position: relative;
-display:inline-block;
-text-align: center; /* Para centrar el texto */
+    display:inline-block;
+    text-align: center; /* Para centrar el texto */
+    position: relative;
 }
 .texto-pulverizadora {
-position: absolute;
-top: 7rem; 
-left: 20px; /* Ajusta la posición del texto */
-font-size: 30px;
-color:rgb(247, 242, 242);
-font-family: Arial, Helvetica, sans-serif;
+    top: 7rem; 
+    left: 20px; /* Ajusta la posición del texto */
+    font-size: 30px;
+    color:rgb(247, 242, 242);
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
 }
 .texto-sembradora {
-position: absolute;
-top: 70px; 
-left: 20px; /* Ajusta la posición del texto */
-font-size: 30px;
-color:rgb(250, 247, 247);
-font-family: Arial, Helvetica, sans-serif;
+    top: 70px; 
+    left: 20px; /* Ajusta la posición del texto */
+    font-size: 30px;
+    color:rgb(250, 247, 247);
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
 }
 .texto-cosechadora {
-position: absolute;
-top: 160px; 
-right: 30px; /* Ajusta la posición del texto */
-font-size: 30px;
-color:rgb(248, 246, 246);
-font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 160px; 
+    right: 30px; /* Ajusta la posición del texto */
+    font-size: 30px;
+    color:rgb(248, 246, 246);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-container {
@@ -150,8 +172,13 @@ form {
         }
 
 label {
-    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: black;
         }
 
 input, select {
@@ -159,29 +186,24 @@ input, select {
     border-radius: 5px;
     border: 8px solid #ccc;
     width: 100%;
-        }
+    }
 
 .filled{
     color: green;
 }
 
-select{
-    color:brown;
+form p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: black;
 }
+
 option{
     color:blue;
 }
-
-li {
-    list-style-type:none;
-    padding: 10px;
-    background-color: #95c09f;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
-        }
-
 
 .img-whatsapp {
     position: fixed;
@@ -217,6 +239,9 @@ header p{
     color:rgb(8, 8, 8);
     text-decoration: underline;    
 }
+.dueño{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 @media (max-width:992px) {
     h1{
@@ -248,28 +273,28 @@ section img {
     max-width: 100%;
     }
 .texto-pulverizadora {
-position: absolute;
-top: 6rem; 
-left: 20px; /* Ajusta la posición del texto */
-font-size: 20px;
-color:rgb(247, 242, 242);
-font-family: Arial, Helvetica, sans-serif;
+    top: 6rem; 
+    left: 20px; /* Ajusta la posición del texto */
+    font-size: 20px;
+    color:rgb(247, 242, 242);
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
 }
 .texto-sembradora {
-position: absolute;
-top: 4rem; 
-left: 20px; /* Ajusta la posición del texto */
-font-size: 20px;
-color:rgb(250, 247, 247);
-font-family: Arial, Helvetica, sans-serif;
+    top: 4rem; 
+    left: 20px; /* Ajusta la posición del texto */
+    font-size: 20px;
+    color:rgb(250, 247, 247);
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
 }
 .texto-cosechadora {
-position: absolute;
-top: 8rem; 
-right: 30px; /* Ajusta la posición del texto */
-font-size: 20px;
-color:rgb(248, 246, 246);
-font-family: Arial, Helvetica, sans-serif;
+    top: 8rem; 
+    right: 30px; /* Ajusta la posición del texto */
+    font-size: 20px;
+    color:rgb(248, 246, 246);
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
 }
 
 .footer-container {
