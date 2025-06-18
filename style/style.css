@@ -133,30 +133,16 @@ body {
     text-align: center; /* Para centrar el texto */
     position: relative;
 }
-.texto-pulverizadora {
-    top: 7rem; 
-    left: 20px; /* Ajusta la posición del texto */
-    font-size: 30px;
-    color:rgb(247, 242, 242);
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-}
-.texto-sembradora {
-    top: 70px; 
-    left: 20px; /* Ajusta la posición del texto */
-    font-size: 30px;
-    color:rgb(250, 247, 247);
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-}
-.texto-cosechadora {
-    position: absolute;
-    top: 160px; 
-    right: 30px; /* Ajusta la posición del texto */
-    font-size: 30px;
-    color:rgb(248, 246, 246);
-    font-family: Arial, Helvetica, sans-serif;
-}
+
+.texto-pulverizadora,.texto-sembradora,.texto-cosechadora{
+        position: absolute;
+        top: 70%; /* Centrado verticalmente */
+        left: 50%; /* Centrado horizontalmente */
+        transform: translate(-50%, -50%); /* Ajuste para centrar */
+        color: white;
+        font-size: 1.5rem; /* Tamaño del texto ajustable */
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */}
 
 .footer-container {
     display: flex;
@@ -269,94 +255,18 @@ header p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media (max-width:992px) {
-    h1{
-    font-size: 25px;
-    display: grid;
-    place-items: center;
-    text-decoration:underline;
-    text-transform: uppercase;
-    font-family: "Ultra", serif;
-}
-h2{
-    font-size: 15px;
-    display: grid;
-    place-items: center;
-    text-decoration: underline;
-}
-.contenedor{
-    display: flex;
-    justify-content: center;
-    }
-.reservas{
-    font-size: 10px;
-    font-family: "Ultra", serif;
-}
-
-section img {
-    width: 190px; /* Ajusta el tamaño de la imagen a 200px (o el tamaño deseado) */
-    height: auto; /* Mantiene la relación de aspecto de la imagen */
-    max-width: 100%;
-    }
-.texto-pulverizadora {
-    top: 6rem; 
-    left: 20px; /* Ajusta la posición del texto */
-    font-size: 20px;
-    color:rgb(247, 242, 242);
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-}
-.texto-sembradora {
-    top: 4rem; 
-    left: 20px; /* Ajusta la posición del texto */
-    font-size: 20px;
-    color:rgb(250, 247, 247);
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-}
-.texto-cosechadora {
-    top: 8rem; 
-    right: 30px; /* Ajusta la posición del texto */
-    font-size: 20px;
-    color:rgb(248, 246, 246);
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem 1.5rem;
-    background-color: #f2f2f2; 
-}
-
-.derechos {
-    margin: 0;
-    font-size: 0.8rem;
-    color: #333;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 575.98px) {
     .header-container {
         flex-direction: column;}
     .header-container a img {
         max-width: 80px;}
+    
+    h1{
+        font-size: 2.5rem; /* Tamaño de fuente */
+        font-weight: 500;  /* Grosor de la fuente */
+         line-height: 1.2;  /* Altura de línea */
+    margin-bottom: 0.5rem;}
 
     h2 {
         font-size: 1.2rem;
@@ -364,43 +274,105 @@ section img {
     }
 
     nav .container {
-    flex-direction: column;}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
     nav ul {
     margin: 8px 0;  }
 
     .img-maquinas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;}
+
+
+    .texto-pulverizadora,
+    .texto-sembradora,.texto-cosechadora
+    {
+        position: absolute;
+        top: 70%; /* Centrado verticalmente */
+        left: 50%; /* Centrado horizontalmente */
+        transform: translate(-50%, -50%); /* Ajuste para centrar */
+        color: white;
+        font-size: 1.5rem; /* Tamaño del texto ajustable */
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */}
+
+    } 
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Ajustes específicos si quieres */
+    .header-container {
+        flex-direction: row;
+}
+    .img-maquinas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         margin: 10px 0;}
 
     .texto-pulverizadora,
-    .texto-sembradora,
-    .texto-cosechadora {
-        font-size: 1rem;}
+    .texto-sembradora,.texto-cosechadora
+    {
+        position: absolute;
+        top: 70%; /* Centrado verticalmente */
+        left: 50%; /* Centrado horizontalmente */
+        transform: translate(-50%, -50%); /* Ajuste para centrar */
+        color: white;
+        font-size: 1.5rem; /* Tamaño del texto ajustable */
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */}
+    
 
-  /* Puedes ajustar otras reglas según necesidad */
 }
 
-/* Para pantallas pequeñas a medianas (≥576px y <768px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  /* Ajustes específicos si quieres */
-  .header-container {
-    flex-direction: row;
-  }
-  /* Otros ajustes similares a los anteriores */
-}
-
-/* Para pantallas medianas (≥768px y <992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  /* Aquí puedes ajustar tamaño textos, márgenes, etc. */
+    section {
+        display: inline-block; /* Permite alinear secciones en horizontal */
+        text-align: center; /* Centra el contenido dentro de cada sección */
+        margin: 10px; /* Espacio entre las secciones */
 }
 
-/* Para pantallas grandes (≥992px y <1200px) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  /* Ajustes para tablets grandes, escritorios pequeños */
+    section img {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        width: 220px; 
+        height: auto; 
+        max-width: 100%; }
+
+    .img-maquinas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;}
+    
+    .texto-pulverizadora,
+    .texto-sembradora,.texto-cosechadora
+    {
+        position: absolute;
+        top: 70%; /* Centrado verticalmente */
+        left: 50%; /* Centrado horizontalmente */
+        transform: translate(-50%, -50%); /* Ajuste para centrar */
+        color: white;
+        font-size: 1.5rem; /* Tamaño del texto ajustable */
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */}
+    
+
+
+
 }
 
-/* Para pantallas extra grandes (≥1200px) */
-@media (min-width: 1200px) {
-  /* Ajustes para pantallas grandes o monitores */
-}
+
