@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">
 </head>
-<body>
+<body class="bg-secondary">
     <header>
         <div class="header-container">
             <a href="../index.html" class="left-image">
@@ -57,27 +57,27 @@ Trabajamos con responsabilidad, precisión y compromiso. Para hace nos registram
         <form>
             <div>
                 <label>Nombre</label>
-                <input type="text" placeholder="facundo">
+                <input class="filled" type="text" placeholder="facundo">
             </div>
 
             <div>
                 <label>Apellido</label>
-                <input type="text" placeholder="quiroga">
+                <input class="filled" type="text" placeholder="quiroga">
             </div>
 
             <div>
                 <label>telefono</label>
-                <input type="number" placeholder="3472454545" required>
+                <input class="filled" type="number" placeholder="3472454545" required>
             </div>
 
             <div>
                 <label>Nombre de la firma</label>
-                <input type="text" placeholder="panchito sa">
+                <input class="filled" type="text" placeholder="panchito sa">
             </div>
 
             <div>
                 <label>CUIT</label>
-                <input type="number" placeholder="*-********-*" required>
+                <input class="filled" type="number" placeholder="*-********-*" required>
             </div>
             <div>
                 <label>Tipo de maquinaria para prestar servicio</label>
@@ -87,13 +87,15 @@ Trabajamos con responsabilidad, precisión y compromiso. Para hace nos registram
                         <option>sembradora</option>
                     </select>
                 <label>Descripcion corta del equipo que tiene</label>
-                <input type="text" placeholder="John deere modelo ****">
-
+                <input class="filled" type="text" placeholder="John deere modelo ****">
             </div>
+
             <div>
                 <label>Provincia/ciudad o pueblo</label>
-                <input type="text" placeholder="Cordoba/villa maria" required>
+                <input class="filled" type="text" placeholder="Cordoba/villa maria" required>
             </div>
+            
+            <button type="submit" class="mi-boton">Enviar</button>
         </form>
             <section class="img-whatsapp">                
                 <a href="http://wa.me/5493472580898" target="_blank">

@@ -16,7 +16,6 @@ h1{
 }
 h2{
     font-size: 30px;
-    color: bisque;
     display: grid;
     place-items: center;
     text-decoration: underline;
@@ -24,13 +23,15 @@ h2{
 
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     border: black;
+    margin-top: 10px;
     }
 
 ul {
     display: flex;
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
     list-style: none;
 }
@@ -69,7 +70,8 @@ a:hover {
 .header-container {
     display: flex; 
     align-items: center; /* Alinea verticalmente el contenido */
-    justify-content: space-between; /* Espacia los elementos, empujando las imágenes hacia los extremos */
+    justify-content: space-between; 
+    padding: 10px;
 }
 
 .left-image img, .right-image img {
@@ -91,16 +93,40 @@ section {
 }
 
 section img {
-    width: 220px; /* Ajusta el tamaño de la imagen a 200px (o el tamaño deseado) */
-    height: auto; /* Mantiene la relación de aspecto de la imagen */
-    max-width: 100%; /* Asegura que la imagen no desborde su contenedor */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    width: 220px; 
+    height: auto; 
+    max-width: 100%; 
+}
+.mi-boton {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff; /* color del texto */
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #007bff; /* color de fondo similar a btn-primary */
+    border: 1px solid #007bff;
+    padding: 0.375rem 0.75rem; 
+    font-size: 1rem; 
+    border-radius: 0.25rem; 
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.mi-boton:hover {
+    background-color: #0069d9; /* tono más oscuro para el hover */
+    border-color: #0062cc;
 }
 
 body {
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es limitado */
-    background-color:gray ;
+    background-color: #6c757d ;
 }
 .img-maquinas {
     display:inline-block;
@@ -310,4 +336,71 @@ section img {
     font-size: 0.8rem;
     color: #333;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+    .header-container {
+        flex-direction: column;}
+    .header-container a img {
+        max-width: 80px;}
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    nav .container {
+    flex-direction: column;}
+
+    nav ul {
+    margin: 8px 0;  }
+
+    .img-maquinas {
+        width: 100%;
+        margin: 10px 0;}
+
+    .texto-pulverizadora,
+    .texto-sembradora,
+    .texto-cosechadora {
+        font-size: 1rem;}
+
+  /* Puedes ajustar otras reglas según necesidad */
+}
+
+/* Para pantallas pequeñas a medianas (≥576px y <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Ajustes específicos si quieres */
+  .header-container {
+    flex-direction: row;
+  }
+  /* Otros ajustes similares a los anteriores */
+}
+
+/* Para pantallas medianas (≥768px y <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Aquí puedes ajustar tamaño textos, márgenes, etc. */
+}
+
+/* Para pantallas grandes (≥992px y <1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Ajustes para tablets grandes, escritorios pequeños */
+}
+
+/* Para pantallas extra grandes (≥1200px) */
+@media (min-width: 1200px) {
+  /* Ajustes para pantallas grandes o monitores */
 }
