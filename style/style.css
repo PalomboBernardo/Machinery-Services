@@ -312,7 +312,7 @@ header p{
 
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* Ajustes específicos si quieres */
+
     .header-container {
         flex-direction: row;
 }
