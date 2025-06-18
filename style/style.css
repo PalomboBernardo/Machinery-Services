@@ -267,9 +267,9 @@ header p{
         max-width: 80px;}
     
     h1{
-        font-size: 2.5rem; /* Tamaño de fuente */
-        font-weight: 500;  /* Grosor de la fuente */
-         line-height: 1.2;  /* Altura de línea */
+        font-size: 2.5rem;
+        font-weight: 500; 
+        line-height: 1.2;  
     margin-bottom: 0.5rem;}
 
     h2 {
@@ -300,11 +300,11 @@ header p{
     .texto-sembradora,.texto-cosechadora
     {
         position: absolute;
-        top: 70%; /* Centrado verticalmente */
-        left: 50%; /* Centrado horizontalmente */
+        top: 70%; 
+        left: 50%; 
         transform: translate(-50%, -50%); /* Ajuste para centrar */
         color: white;
-        font-size: 1.5rem; /* Tamaño del texto ajustable */
+        font-size: 1.5rem;
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */}
 
@@ -328,22 +328,22 @@ header p{
     .texto-sembradora,.texto-cosechadora
     {
         position: absolute;
-        top: 70%; /* Centrado verticalmente */
-        left: 50%; /* Centrado horizontalmente */
+        top: 70%;
+        left: 50%;
         transform: translate(-50%, -50%); /* Ajuste para centrar */
         color: white;
-        font-size: 1.5rem; /* Tamaño del texto ajustable */
+        font-size: 1.5rem; 
         font-weight: bold;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */}
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); }
     
 
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     section {
-        display: inline-block; /* Permite alinear secciones en horizontal */
-        text-align: center; /* Centra el contenido dentro de cada sección */
-        margin: 10px; /* Espacio entre las secciones */
+        display: inline-block; 
+        text-align: center;
+        margin: 10px;
 }
 
     section img {
@@ -366,11 +366,11 @@ header p{
     .texto-sembradora,.texto-cosechadora
     {
         position: absolute;
-        top: 70%; /* Centrado verticalmente */
-        left: 50%; /* Centrado horizontalmente */
+        top: 70%; 
+        left: 50%; 
         transform: translate(-50%, -50%); /* Ajuste para centrar */
         color: white;
-        font-size: 1.5rem; /* Tamaño del texto ajustable */
+        font-size: 1.5rem; 
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */}
     
