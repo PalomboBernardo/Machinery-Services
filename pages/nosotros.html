@@ -8,51 +8,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../sass/style.css">
 </head>
 <body class="bg-secondary">
     <header>
         <div class="header-container">
             <a href="../index.html" class="left-image">
-                <img src="../assets/agromaq.jpg" alt="El logo de Servicios Agro Maq"> 
-            </a>       
-            <a href="../index.html">   
-                <h1>Servicios Agro Maq</h1>
+                <img src="../assets/Logo- Machinery Services .jpg" alt="El logo de Machinery Services"> 
+            </a>        
+                <h1>Machinery Services</h1>
             </a>
             <a href="../index.html"  class="right-image">
-                <img src="../assets/agromaq.jpg"alt="El logo de Servicios Agro Maq"> 
+                <img src="../assets/Logo- Machinery Services .jpg"alt="El logo de Machinery Services"> 
             </a>   
             
         </div>
-        <nav> 
+        <nav class="navbar navbar-expand-md">
             <div class="container">
-                <ul>
-                    <li>
-                        <a href="../pages/reservas.html" class="reservas">Reservas</a>
-                    </li>                
-                </ul>
-                <ul>
-                    <li>
-                        <a href="../pages/contratista.html" class="reservas">Contratista</a>
-                    </li>
-                </ul>            
-                <ul>
-                    <li>
-                        <a href="../pages/productor.html" class="reservas">Productor</a>
-                    </li>
-                </ul>    
-                <ul>
-                    <li>
-                        <a href="../pages/nosotros.html" class="reservas" >Nosotros</a>
-                    </li>
-                </ul>    
+                <!-- Botón hamburguesa solo visible en móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuReserves" aria-controls="menuReserves" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menú colapsable -->
+                <div class="collapse navbar-collapse" id="menuReserves">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="../pages/reservas.html" class="reservas" class="nav-link" >Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/contratista.html"class="reservas" class="nav-link" >Contratista</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/productor.html" class="reservas" class="nav-link" >Productor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/nosotros.html"  class="reservas" class="nav-link" >Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <h2>Sobre Nosotros</h2>
-
     </header>
 
     <main>
+        <h2>Sobre Nosotros</h2>
         <p>Somos un grupo de personas del ámbito rural y tecnológico que vimos una necesidad clara en el campo: mejorar la conexión entre productores y contratistas de maquinaria agrícola.
 Creamos esta plataforma con la idea de facilitar, agilizar y organizar ese proceso, para que el productor encuentre el servicio que necesita en el momento justo, y el contratista pueda ofrecer su trabajo de forma clara y profesional.
 Creemos en el trabajo bien hecho, en el valor del tiempo en el campo y en aprovechar la tecnología para resolver problemas reales.
@@ -83,5 +83,6 @@ Creemos en el trabajo bien hecho, en el valor del tiempo en el campo y en aprove
         </a>
     </nav>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
