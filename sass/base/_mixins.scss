@@ -1,0 +1,15 @@
+@mixin flex-center($direction: row, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+    }
+
+@mixin box-shadow($level: 1) {
+    @if $level == 1 {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    } @else if $level == 2 {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+    }

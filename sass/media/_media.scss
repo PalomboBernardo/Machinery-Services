@@ -1,0 +1,133 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+
+// ===========================
+// Responsive SCSS
+// ===========================
+
+// Mobile: Hasta 575.98px
+@media (max-width: 575.98px) {
+    .header-container {
+        flex-direction: column;
+
+        a {
+            img {
+                max-width: 80px;
+            }
+        }
+    }
+
+        h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        ul {
+            margin: 8px 0;
+            }
+        }
+    }
+
+    .img-maquinas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+            img {
+                width: 90%;
+                max-width: 280px;
+        }
+            .texto-pulverizadora,
+            .texto-sembradora,
+            .texto-cosechadora {
+                font-size: 1rem;
+                padding: 8px;
+        }
+    }
+
+    .img-whatsapp {
+        position: fixed;
+        right: 3%;
+        top: 65%;
+        bottom: 25px;
+        z-index: 100;
+    }
+}
+
+// Small Devices: 576px–767.98px
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .header-container {
+        flex-direction: row;
+    }
+
+    .img-maquinas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+
+        .texto-pulverizadora,
+        .texto-sembradora,
+        .texto-cosechadora {
+            font-size: 1.1rem;
+            padding: 8px;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.55);
+            text-align: center;
+        }
+    }
+}
+
+// Medium Devices: 768px–991.98px
+@media (min-width: 768px) and (max-width: 991.98px) {
+    section {
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+
+        img {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            width: 220px;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+
+    .img-maquinas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+
+        .texto-pulverizadora,
+        .texto-sembradora,
+        .texto-cosechadora {
+            font-size: 1.2rem;
+            padding: 10px 12px;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+    }
+}

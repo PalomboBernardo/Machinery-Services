@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Agro Maq - reservas</title>
+    <title>Machinery Services - Reservas</title>
     <link rel="shortcut icon" href="../assets/agromaq.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,80 +51,71 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Realiza tu reserva con anticipacion</h2>
-        <form>
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="filled" class="form-control" id="nombre" placeholder="facundo"  required >
-            </div>
-
-            <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text"  class="filled" class="form-control" id="apellido" placeholder="quiroga" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="telefono" class="form-label">Teléfono</label>
-                <input type="number" class="filled" class="form-control" id="telefono" placeholder="3472454545" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="nombreFirma" class="form-label">Nombre de la firma</label>
-                <input type="text" class="filled" class="form-control" id="nombreFirma" placeholder="panchito sa" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="cuit" class="form-label">CUIT</label>
-                <input type="text" class="filled" class="form-control" id="cuit" placeholder="*-********-*" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="hectareas" class="form-label">Cantidad de Hectáreas para hacer el servicio</label>
-                <input type="number" class="filled" class="form-control" id="hectareas" placeholder="numero" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="ubicacion" class="form-label">Provincia/ciudad o pueblo</label>
-                <input type="text" class="filled" class="form-control" id="ubicacion" placeholder="Cordoba/villa maria" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="fecha" class="form-label">Fecha</label>
-                <input type="datetime-local" class="form-control" id="fecha">
-            </div>
-
-            <p>¿Que tipo de maquinaria que Necesitas?</p>
-
-            <select class="form-select" aria-label="Tipo de maquinaria">
+<main>
+    <h2>Realizá tu reserva con anticipación</h2>
+    <form class="form-reserva">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" class="filled" placeholder="Facundo" required>
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" class="filled" placeholder="Quiroga" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="filled" placeholder="3472454545" required>
+        </div>
+        <div class="form-group">
+            <label for="nombreFirma">Nombre de la firma</label>
+            <input type="text" id="nombreFirma" class="filled" placeholder="Panchito SA" required>
+        </div>
+        <div class="form-group">
+            <label for="cuit">CUIT</label>
+            <input type="text" id="cuit" class="filled" placeholder="20-12345678-9" required>
+        </div>
+        <div class="form-group">
+            <label for="hectareas">Cantidad de Hectáreas para hacer el servicio</label>
+            <input type="number" id="hectareas" class="filled" placeholder="Número" required>
+        </div>
+        <div class="form-group">
+            <label for="ubicacion">Provincia/Ciudad o Pueblo</label>
+            <input type="text" id="ubicacion" class="filled" placeholder="Córdoba/Villa María" required>
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha</label>
+            <input type="datetime-local" id="fecha" class="filled">
+        </div>
+        <div class="form-group">
+            <label for="tipoMaquinaria">¿Qué tipo de maquinaria necesitás?</label>
+            <select id="tipoMaquinaria" class="filled">
                 <option>Pulverizadora</option>
                 <option>Sembradora</option>
                 <option>Otras</option>
                 <option>Cosechadora</option>
             </select>
-            
-
-            <div class="mb-3">
-                <label for="archivo" class="form-label">Adjuntar archivo KML</label>
-                <input class="form-control" type="file" id="archivo" name="archivo">
-            </div>
-
-            <button type="submit" class="btn btn-primary">Enviar</button>
-                
-        </form>
+        </div>
+        <div class="form-group">
+            <label for="archivo">Adjuntar archivo KML</label>
+            <input type="file" id="archivo" class="filled">
+        </div>
+        <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
             <section class="img-whatsapp">                
                 <a href="http://wa.me/5493472580898" target="_blank">
                     <img src="../assets/whatsapp.png">  
                 </a>   
             </section> 
             
-        <p class="kml-titulo">Como generar el kml o kmz</p>
-        <video class="kml" src="../assets/Cómo generar un archivo KMZ en Google Earth para compartir.mp4" controls>Como generar el kml o kmz
-        </video>
+            <section class="seccion-kml">
+                <p class="kml-titulo">¿Cómo generar el archivo KML o KMZ?</p>
+                <video class="kml-video" src="../assets/Cómo generar un archivo KMZ en Google Earth para compartir.mp4" controls>
+                Tu navegador no soporta la reproducción de video.
+                </video>
+            </section>
     </main>
 
     <footer class="footer-container">
-
     <p class="derechos">2025 Servicios Agro Maq. Todos los derechos reservados.</p>
     <p class="dueño">Creado por Palombo</p>
     <nav class="social">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Agro Maq - contratista</title>
+    <title>Machinery Services - contratista</title>
     <link rel="shortcut" href="../assets/agromaq.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,51 +52,48 @@
 
     <main>
         <h2>Contratista</h2>
-        <p class="descripcion-contratista">Ofrecemos servicios de siembra, pulverización y cosecha con maquinaria moderna y personal capacitado. Brindamos soluciones eficientes y a tiempo para productores rurales, adaptándonos a cada necesidad y zona de trabajo.
+        <p class="parrafo-destacado">Ofrecemos servicios de siembra, pulverización y cosecha con maquinaria moderna y personal capacitado. Brindamos soluciones eficientes y a tiempo para productores rurales, adaptándonos a cada necesidad y zona de trabajo.
 Trabajamos con responsabilidad, precisión y compromiso. Para hace nos registramos en el siguiente formulario para estar al alcanze de cualquier productor que nos necesite
         </p>
-        <form>
-            <div>
-                <label>Nombre</label>
-                <input class="filled" type="text" placeholder="facundo">
+        <form class="form-reserva">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="filled" placeholder="Facundo" required>
             </div>
-
-            <div>
-                <label>Apellido</label>
-                <input class="filled" type="text" placeholder="quiroga">
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" class="filled" placeholder="Quiroga" required>
             </div>
-
-            <div>
-                <label>telefono</label>
-                <input class="filled" type="number" placeholder="3472454545" required>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="number" id="telefono" class="filled" placeholder="3472454545" required>
             </div>
-
-            <div>
-                <label>Nombre de la firma</label>
-                <input class="filled" type="text" placeholder="panchito sa">
+            <div class="form-group">
+                <label for="nombreFirma">Nombre de la firma</label>
+                <input type="text" id="nombreFirma" class="filled" placeholder="Panchito SA" required>
             </div>
-
-            <div>
-                <label>CUIT</label>
-                <input class="filled" type="number" placeholder="*-********-*" required>
+            <div class="form-group">
+                <label for="cuit">CUIT</label>
+                <input type="number" id="cuit" class="filled" placeholder="20-12345678-9" required>
             </div>
             <div>
                 <label>Tipo de maquinaria para prestar servicio</label>
-                    <select>
+                    <select id="tipoMaquinaria" class="filled">
                         <option>cosechadora</option>
                         <option>pulverizadora</option>
                         <option>sembradora</option>
                     </select>
-                <label>Descripcion corta del equipo que tiene</label>
-                <input class="filled" type="text" placeholder="John deere modelo ****">
+            <div class="form-group">
+                <label>Descripción corta del equipo que tenés</label>
+                <textarea id="descripcionEquipo" class="filled" placeholder="Ej: John Deere modelo ****" maxlength="500" rows="4"></textarea>
+                <small>Máximo 500 caracteres.</small>
             </div>
-
-            <div>
-                <label>Provincia/ciudad o pueblo</label>
-                <input class="filled" type="text" placeholder="Cordoba/villa maria" required>
+            <div class="form-group">
+                <label for="ubicacion">Provincia/Ciudad o Pueblo</label>
+                <input type="text" id="ubicacion" class="filled" placeholder="Córdoba/Villa María" required>
             </div>
             
-            <button type="submit" class="mi-boton">Enviar</button>
+            <button type="submit" class="btn-enviar">Enviar</button>
         </form>
             <section class="img-whatsapp">                
                 <a href="http://wa.me/5493472580898" target="_blank">

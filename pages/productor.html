@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Agro Maq - productor</title>
+    <title>Machinery Services - Productor</title>
     <link rel="shortcut" href="../assets/agromaq.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,69 +53,64 @@
 
     <main>
         <h2>Productores</h2>
-        <p>Busco un contratista confiable para mis labores agrícolas.
-        Necesito maquinaria moderna y personal responsable para trabajos de siembra, pulverización o cosecha en mi campo. Valoro la puntualidad, la precisión y una buena comunicación para poder planificar la campaña sin sorpresas.
+        <p class="parrafo-destacado">Si estas buscando un contrastista para realizar tus labores, completa el siguiente formulario
         </p>
-        <form>
-            <div>
-                <label>Nombre</label>
-                <input class="filled" type="text" placeholder="facundo">
+        <form class="form-reserva">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="filled" placeholder="Facundo" required>
             </div>
-
-            <div>
-                <label>Apellido</label>
-                <input class="filled" type="text" placeholder="quiroga">
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" class="filled" placeholder="Quiroga" required>
             </div>
-
-            <div>
-                <label>telefono</label>
-                <input class="filled" type="number" placeholder="3472454545" required>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="filled" placeholder="3472454545" required>
             </div>
-
-            <div>
-                <label>Nombre de la firma</label>
-                <input class="filled" type="text" placeholder="panchito sa">
+            <div class="form-group">
+                <label for="nombreFirma">Nombre de la firma</label>
+                <input type="text" id="nombreFirma" class="filled" placeholder="Panchito SA" required>
             </div>
-
-            <div>
-                <label>CUIT</label>
-                <input class="filled" type="number" placeholder="*-********-*" required>
+            <div class="form-group">
+                <label for="cuit">CUIT</label>
+                <input type="text" id="cuit" class="filled" placeholder="20-12345678-9" required>
             </div>
-            <div>
-                <label>Cantiad de Hectareas</label>
-                <input class="filled" type="number" placeholder="numero" required>
+            <div class="form-group">
+                <label for="hectareas">Cantidad de Hectáreas para hacer el servicio</label>
+                <input type="number" id="hectareas" class="filled" placeholder="Número" required>
             </div>
-            <div>
-                <label>Provincia/ciudad o pueblo</label>
-                <input class="filled" type="text" placeholder="Cordoba/villa maria" required>
+            <div class="form-group">
+                <label for="ubicacion">Provincia/Ciudad o Pueblo</label>
+                <input type="text" id="ubicacion" class="filled" placeholder="Córdoba/Villa María" required>
             </div>
-
-            <div>
-                <label>fecha</label>
-                <input type="datetime-local">
-                    <select>
-                        <option>cosechadora</option>
-                        <option>pulverizadora</option>
-                        <option>sembradora</option>
-                    </select>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="datetime-local" id="fecha" class="filled">
             </div>
-
-            <div>
+                <select id="tipoMaquinaria" class="filled">
+                    <option>Pulverizadora</option>
+                    <option>Sembradora</option>
+                    <option>Otras</option>
+                    <option>Cosechadora</option>
+            </select>
+            </div>
+            <div class="form-group">
                 <label for="archivo">Adjuntar archivo kml</label>
-                <input type="file" id="archivo" name="archivo">
+                <input type="file" id="archivo" name="archivo" class="filled">
             </div>
-
-                <button type="submit" class="mi-boton">Enviar</button>
-                
+                <button type="submit" class="btn-enviar">Enviar</button>
         </form>
             <section class="img-whatsapp">                
                 <a href="http://wa.me/5493472580898" target="_blank">
                     <img src="../assets/whatsapp.png">  
                 </a>   
             </section>   
-        
-        <video class="kml" src="../assets/Cómo generar un archivo KMZ en Google Earth para compartir.mp4" controls>Como generar el kmlo kmz
-        </video>
+            <section class="seccion-kml">
+                <p class="kml-titulo">¿Cómo generar el archivo KML o KMZ?</p>
+                <video class="kml" src="../assets/Cómo generar un archivo KMZ en Google Earth para compartir.mp4" controls>Como generar el kmlo kmz
+                </video>
+            </section>
     </main>
     
 <footer class="footer-container">

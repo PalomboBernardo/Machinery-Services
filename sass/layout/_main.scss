@@ -1,0 +1,115 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    @include flex-center(column);
+    background-color: #fdfdfd;
+
+    h2 {
+        font-family: $font-sec;
+        font-size: 2.5rem;
+        color: #333;
+        text-align: center;
+        border-bottom: 3px solid $color-dorado;
+        padding-bottom: 15px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .parrafo-destacado {
+        font-family: $font-sec;
+        font-size: 1.25rem;
+        line-height: 1.7;
+        color: #444;
+        background-color: #f9f9f9;
+        border-left: 5px solid $color-dorado;
+        padding: 20px 25px;
+        margin: 30px 0;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        max-width: 800px;
+        text-align: justify;
+    }
+
+    .form-reserva {
+        width: 100%;
+        max-width: 600px;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 40px 30px;
+        @include box-shadow(2);
+        @include flex-center(column, 20px);
+
+        .form-group {
+            display: flex;
+            flex-direction: column;     
+            label {
+                font-family: 'Times New Roman', serif;
+                font-size: 1.2rem;
+                color: #333;
+                margin-bottom: 8px;
+            }     
+            input, select {
+                padding: 12px 15px;
+                font-size: 1rem;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                background-color: #f9f9f9;
+                &.filled {
+                    color: #2e7d32;
+                    border-color: $color-dorado;
+            }
+                &:focus {
+                    outline: none;
+                    border-color: $color-dorado;
+                    box-shadow: 0 0 5px rgba(191, 161, 74, 0.6);
+                }
+        }
+    }
+    .btn-enviar {
+        margin-top: 20px;
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        background-color: $color-dorado;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+            background-color: #a68f3c;
+        }
+    }
+    }
+
+    .seccion-kml {
+        width: 100%;
+        max-width: 800px;
+        margin: 60px auto 40px;
+        padding: 20px;
+        text-align: center;
+        background-color: #fefefe;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+        .kml-titulo {
+            font-family: $font-sec;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            font-size: 1.8rem;
+        }
+
+        .kml-video {
+            max-width: 50%;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            @include box-shadow(1);
+        }
+    }
+}

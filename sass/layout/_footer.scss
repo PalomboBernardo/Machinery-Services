@@ -1,0 +1,34 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.footer-container {
+    background-color: #1e1e1e;
+    padding: 30px 40px;
+    @include flex-center(column, 20px);
+    text-align: center;
+
+    .derechos,
+    .dueño {
+        color: #aaa;
+        font-family: 'Roboto', sans-serif;
+    }
+    .dueño {
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+    .social {
+        display: flex;
+        gap: 20px;
+        a {
+            transition: transform 0.3s;
+            img {
+                width: 30px;
+                height: 30px;
+                filter: drop-shadow(0 0 6px $color-dorado) brightness(0) invert(1);
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
