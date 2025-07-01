@@ -1,0 +1,9 @@
+# Asegura que Git normalice todos los archivos de texto
+* text=auto
+
+# Fuerza LF en el repositorio para estos archivos (CRLF en Windows local si core.autocrlf = true)
+*.scss text eol=lf
+*.css  text eol=lf
+*.html text eol=lf
+*.js   text eol=lf
+*.ts   text eol=lf
