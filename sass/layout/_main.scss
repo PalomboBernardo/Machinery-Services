@@ -1,6 +1,7 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
 
+/* Estilos del main (contenido central) */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -85,6 +86,7 @@ main {
     }
     }
 
+    /* Sección del archivo KML */
     .seccion-kml {
         width: 100%;
         max-width: 800px;

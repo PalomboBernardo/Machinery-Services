@@ -1,3 +1,4 @@
+/* Mixin de flexbox centrado, configurable */
 @mixin flex-center($direction: row, $gap: 0) {
     display: flex;
     flex-direction: $direction;
@@ -6,6 +7,7 @@
     gap: $gap;
     }
 
+/* Mixin para sombras en dos niveles */
 @mixin box-shadow($level: 1) {
     @if $level == 1 {
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);

@@ -1,11 +1,13 @@
 @use "variables" as *;
 
+/* Reset general */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Color de fondo del body */
 body.bg-secondary {
     background-color: $bg-dark;
 }

@@ -1,17 +1,32 @@
+/* -------------------------------------------
+    Importación de módulos base y layout
+---------------------------------------------- */
+
+/* Variables globales (colores, tipografías) */
 @use "base/variables" as *;
+
+/* Mixins reutilizables */
 @use "base/mixins" as *;
+
+/* Reset y estilos base */
 @use "base/base";
 
+/* Layout del sitio */
 @use "layout/header";
 @use "layout/main";
 @use "layout/footer";
 
+/* Responsivo */
 @use "media/media";
 
-
+/* Componentes */
 @use "components/whatsapp";
 
+/* -------------------------------------------
+    Estilos adicionales globales
+---------------------------------------------- */
 
+/* Estilo general para secciones individuales */
 section {
     display: inline-block; 
     text-align: center; 
@@ -25,6 +40,8 @@ section {
         max-width: 100%; 
     }  
 }
+
+/* Grid flexible para mostrar imágenes de maquinaria */
 .maquinas-wrapper {
     display: flex;
     justify-content: center;
@@ -53,6 +70,7 @@ section {
                     display: block;
                     border-radius: 10px;
                 }
+                /* Texto superpuesto en cada imagen */
                 .texto-pulverizadora,
                 .texto-sembradora,
                 .texto-cosechadora {

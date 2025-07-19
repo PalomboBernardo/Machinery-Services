@@ -1,8 +1,7 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
 
-
-
+/* Estilos del header y navegación */
 header {
     background: linear-gradient(to right, #222, #444);
     padding: 20px 25px;
