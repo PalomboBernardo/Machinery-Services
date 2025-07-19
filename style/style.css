@@ -1,14 +1,36 @@
 @charset "UTF-8";
+/* -------------------------------------------
+    Importación de módulos base y layout
+---------------------------------------------- */
+/* Variables globales (colores, tipografías) */
+/* Variables globales */
+/* Mixins reutilizables */
+/* Mixin de flexbox centrado, configurable */
+/* Mixin para sombras en dos niveles */
+/* Reset y estilos base */
+/* -------------------------------------------
+    Importación de módulos base y layout
+---------------------------------------------- */
+/* Variables globales (colores, tipografías) */
+/* Reset general */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Color de fondo del body */
 body.bg-secondary {
   background-color: #121212;
 }
 
+/* Layout del sitio */
+/* -------------------------------------------
+    Importación de módulos base y layout
+---------------------------------------------- */
+/* Variables globales (colores, tipografías) */
+/* Mixins reutilizables */
+/* Estilos del header y navegación */
 header {
   background: linear-gradient(to right, #222, #444);
   padding: 20px 25px;
@@ -106,6 +128,12 @@ header nav .container ul li a:active {
   color: #0f0f0f;
 }
 
+/* -------------------------------------------
+    Importación de módulos base y layout
+---------------------------------------------- */
+/* Variables globales (colores, tipografías) */
+/* Mixins reutilizables */
+/* Estilos del main (contenido central) */
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -116,6 +144,7 @@ main {
   align-items: center;
   gap: 0;
   background-color: #fdfdfd;
+  /* Sección del archivo KML */
 }
 main h2 {
   font-family: "Lato", sans-serif;
@@ -220,6 +249,12 @@ main .seccion-kml .kml-video {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
+/* -------------------------------------------
+    Importación de módulos base y layout
+---------------------------------------------- */
+/* Variables globales (colores, tipografías) */
+/* Mixins reutilizables */
+/* Estilos del footer */
 .footer-container {
   background-color: #1e1e1e;
   padding: 30px 40px;
@@ -255,6 +290,12 @@ main .seccion-kml .kml-video {
   transform: scale(1.1);
 }
 
+/* Responsivo */
+/* -------------------------------------------
+    Importación de módulos base y layout
+---------------------------------------------- */
+/* Variables globales (colores, tipografías) */
+/* Mixins reutilizables */
 @media (max-width: 575.98px) {
   .header-container {
     flex-direction: column;
@@ -360,6 +401,12 @@ main .seccion-kml .kml-video {
     text-align: center;
   }
 }
+/* Componentes */
+/* -------------------------------------------
+    Importación de módulos base y layout
+---------------------------------------------- */
+/* Variables globales (colores, tipografías) */
+/* Botón flotante de WhatsApp */
 .img-whatsapp {
   position: fixed;
   bottom: 25px;
@@ -375,6 +422,10 @@ main .seccion-kml .kml-video {
   height: 60px;
 }
 
+/* -------------------------------------------
+    Estilos adicionales globales
+---------------------------------------------- */
+/* Estilo general para secciones individuales */
 section {
   display: inline-block;
   text-align: center;
@@ -389,6 +440,7 @@ section img {
   max-width: 100%;
 }
 
+/* Grid flexible para mostrar imágenes de maquinaria */
 .maquinas-wrapper {
   display: flex;
   justify-content: center;
@@ -405,6 +457,7 @@ section img {
   position: relative;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  /* Texto superpuesto en cada imagen */
 }
 .maquinas-wrapper .img-maquinas:hover {
   transform: scale(1.02);
