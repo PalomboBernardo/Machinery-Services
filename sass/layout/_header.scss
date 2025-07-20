@@ -22,10 +22,21 @@ header {
             height: auto;
         }
 
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
+            color: $color-dorado;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
     }
 
     // Estilo del botón hamburguesa (uso .navbar-toggler de Bootstrap)
     .navbar-toggler {
+        display: none;
         z-index: 102;
         border: none;
         background: transparent;
@@ -33,12 +44,14 @@ header {
 
         // Ícono predeterminado Bootstrap
         .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
             width: 30px;
             height: 30px;
         }
 
         @media (max-width: 768px) {
+            display: block;
+
             .navbar-toggler-icon {
                 width: 25px;
                 height: 25px;
