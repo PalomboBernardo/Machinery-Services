@@ -30,9 +30,10 @@ body.bg-secondary {
 ---------------------------------------------- */
 /* Variables globales (colores, tipografías) */
 /* Mixins reutilizables */
-/* Estilos del header y navegación */
 header {
-  background: linear-gradient(to right, #222, #444);
+  background: linear-gradient(-45deg, #222, #444, #6c4f27, #c9a227);
+  background-size: 400% 400%;
+  animation: fondoAgricola 15s ease infinite;
   padding: 20px 25px;
   display: flex;
   flex-direction: column;
@@ -46,31 +47,25 @@ header .header-container {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  justify-content: space-between;
+}
+header .header-container .navbar-toggler {
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+header .header-container .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='gold' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+header .header-container .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+header .left-image img {
   width: 100%;
-  max-width: 1200px;
-}
-header .header-container h1 {
-  flex: 2;
-  font-family: "Roboto", sans-serif;
-  font-size: 2.5rem;
-  color: #f5f5f5;
-  letter-spacing: 1.5px;
-  text-align: center;
-}
-header .header-container a {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-header .header-container a img {
-  width: 150px;
-  border-radius: 8px;
-  transition: transform 1s;
-  max-width: 100%;
+  max-width: 160px;
   height: auto;
-}
-header .header-container a img:hover {
-  transform: scale(1.05);
+  display: block;
 }
 header nav {
   margin-top: 15px;
@@ -101,7 +96,7 @@ header nav .container ul {
 }
 header nav .container ul li {
   padding: 12px 24px;
-  border: 2px solid #bfa14a;
+  border: 2px solid #c9a227;
   border-radius: 8px;
   background-color: #222;
   transition: background-color 0.9s;
@@ -121,13 +116,24 @@ header nav .container ul li a {
   color: #f5f5f5;
 }
 header nav .container ul li a:hover {
-  background-color: #bfa14a;
+  background-color: #c9a227;
   color: rgba(5, 5, 5, 0.8549019608);
 }
 header nav .container ul li a:active {
   color: #0f0f0f;
 }
 
+@keyframes fondoAgricola {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* -------------------------------------------
     Importación de módulos base y layout
 ---------------------------------------------- */
@@ -151,7 +157,7 @@ main h2 {
   font-size: 2.5rem;
   color: #333;
   text-align: center;
-  border-bottom: 3px solid #bfa14a;
+  border-bottom: 3px solid #c9a227;
   padding-bottom: 15px;
   margin-bottom: 40px;
   width: 100%;
@@ -162,7 +168,7 @@ main .parrafo-destacado {
   line-height: 1.7;
   color: #444;
   background-color: #f9f9f9;
-  border-left: 5px solid #bfa14a;
+  border-left: 5px solid #c9a227;
   padding: 20px 25px;
   margin: 30px 0;
   border-radius: 12px;
@@ -202,11 +208,11 @@ main .form-reserva .form-group input, main .form-reserva .form-group select {
 }
 main .form-reserva .form-group input.filled, main .form-reserva .form-group select.filled {
   color: #2e7d32;
-  border-color: #bfa14a;
+  border-color: #c9a227;
 }
 main .form-reserva .form-group input:focus, main .form-reserva .form-group select:focus {
   outline: none;
-  border-color: #bfa14a;
+  border-color: #c9a227;
   box-shadow: 0 0 5px rgba(191, 161, 74, 0.6);
 }
 main .form-reserva .btn-enviar {
@@ -214,7 +220,7 @@ main .form-reserva .btn-enviar {
   padding: 12px 25px;
   font-size: 1.1rem;
   font-weight: bold;
-  background-color: #bfa14a;
+  background-color: #c9a227;
   color: white;
   border: none;
   border-radius: 8px;
@@ -284,7 +290,7 @@ main .seccion-kml .kml-video {
 .footer-container .social a img {
   width: 30px;
   height: 30px;
-  filter: drop-shadow(0 0 6px #bfa14a) brightness(0) invert(1);
+  filter: drop-shadow(0 0 6px #c9a227) brightness(0) invert(1);
 }
 .footer-container .social a:hover {
   transform: scale(1.1);
@@ -401,6 +407,32 @@ main .seccion-kml .kml-video {
     text-align: center;
   }
 }
+/* Estilo responsivo para iframe de YouTube */
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.responsive-video iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+}
+
+@media (max-width: 575.98px) {
+  .left-image img {
+    max-width: 120px;
+  }
+}
 /* Componentes */
 /* -------------------------------------------
     Importación de módulos base y layout
@@ -410,7 +442,7 @@ main .seccion-kml .kml-video {
 .img-whatsapp {
   position: fixed;
   bottom: 25px;
-  right: 25px;
+  right: 60px;
   z-index: 100;
   transition: transform 0.2s ease;
 }
@@ -420,6 +452,9 @@ main .seccion-kml .kml-video {
 .img-whatsapp img {
   width: 60px;
   height: 60px;
+  background-color: transparent;
+  border: none;
+  display: block;
 }
 
 /* -------------------------------------------

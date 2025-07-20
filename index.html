@@ -8,65 +8,70 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <!-- SEO -->
     <title>Machinery Services</title>
-    <meta name="description" content="es una página web pensada para facilitar la reserva y contratación de maquinaria agrícola">
-    <meta name="keywords" content="alquiler de maquinaria agrícola, servicios con maquinaria rural, reserva de maquinaria agrícola, servicio de cosecha y siembra, contratación de maquinaria agropecuaria">
+    <meta name="description"
+        content="es una página web pensada para facilitar la reserva y contratación de maquinaria agrícola">
+    <meta name="keywords"
+        content="alquiler de maquinaria agrícola, servicios con maquinaria rural, reserva de maquinaria agrícola, servicio de cosecha y siembra, contratación de maquinaria agropecuaria">
     <meta name="author" content="Palombo Bernardo Antonio">
     <meta name="owner" content="Machinery Services">
 </head>
 
 <body class="bg-secondary">
     <!-- ENCABEZADO -->
-    <header>
-        <div class="header-container">
-            <a href="./index.html" class="left-image">
-                <img src="./assets/Logo- Machinery Services .jpg" alt="El logo de Machinery Services"> 
-            </a>  
-            <h1>Machinery Services</h1>
-            <a href="./index.html"  class="right-image">
-                <img src="./assets/Logo- Machinery Services .jpg"alt="El logo de Machinery Services"> 
-            </a>   
-                
-        </div>
-        <!-- MENÚ DE NAVEGACIÓN -->
-        <nav class="navbar navbar-expand-md">
-            <div class="container">
-                <!-- Botón hamburguesa solo visible en móviles -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuReserves" aria-controls="menuReserves" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Menú colapsable -->
-                <div class="collapse navbar-collapse" id="menuReserves">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a href="./pages/reservas.html" class="reservas" class="nav-link" >Reservas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./pages/contratista.html"class="reservas" class="nav-link" >Contratista</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./pages/productor.html" class="reservas" class="nav-link" >Productor</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./pages/nosotros.html"  class="reservas" class="nav-link" >Nosotros</a>
-                        </li>
-                    </ul>
-                </div>
+<header>
+    <div class="header-container">
+        <a href="./index.html" class="left-image">
+            <img src="./assets/Logo- Machinery Services .jpg" alt="El logo de Machinery Services"> 
+        </a>
+
+        <!-- Mover el botón hamburguesa aquí -->
+        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuReserves" aria-controls="menuReserves" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <!-- Este botón ya no va aquí -->
+            <div class="collapse navbar-collapse" id="menuReserves">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="./pages/reservas.html" class="nav-link reservas">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pages/contratista.html" class="nav-link reservas">Contratista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pages/productor.html" class="nav-link reservas">Productor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pages/nosotros.html" class="nav-link reservas">Nosotros</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
+
 
     <!-- CONTENIDO PRINCIPAL -->
     <main>
         <h2>¿Que Necesitas?</h2>
         <p class="parrafo-destacado">
-    Si necesitás maquinaria agrícola confiable y lista para trabajar, estás en el lugar indicado. Seleccioná el tipo de equipo que querés contratar y Completá el formulario a continuación y Nosotros nos encargamos del resto.
-    </p>
+            Si necesitás maquinaria agrícola confiable y lista para trabajar, estás en el lugar indicado. Seleccioná el
+            tipo de equipo que querés contratar y Completá el formulario a continuación y Nosotros nos encargamos del
+            resto.
+        </p>
         <!-- Sección de tipos de maquinaria -->
         <div class="maquinas-wrapper">
             <section class="img-maquinas">
@@ -92,31 +97,33 @@
             </section>
         </div>
         <!-- Enlace a WhatsApp -->
-        <section class="img-whatsapp">                
-            <a href="http://wa.me/5493472580898" target="_blank">
-                <img src="./assets/whatsapp.png">  
-            </a>        
-        </section>        
-        
+        <section class="img-whatsapp">
+            <a href="http://wa.me/5493472580898" class="img-whatsapp" target="_blank" aria-label="WhatsApp">
+            <img src="./assets/whatsapp2.png" alt="Icono WhatsApp">
+            </a>
+        </section>
+
     </main>
 
-<!-- PIE DE PÁGINA -->
-<footer class="footer-container">
-    <p class="derechos">2025 Servicios Agro Maq. Todos los derechos reservados.</p>
-    <p class="dueño"> Creado por Palombo </p>
-    <nav class="social">
-        <a href="https://www.facebook.com/?locale=es_LA" target="_blank" title="Visítanos en Facebook">
-            <img src="./assets/facebook-box-fill.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/?hl=es-la" target="_blank" title="Visítanos en Instagram">
-            <img src="./assets/instagram-line.png" alt="Instagram">
-        </a>
-        <a href="https://x.com/?lang=es" target="_blank" title="Visítanos en Twitter">
-            <img src="./assets/twitter-line.png" alt="Twitter">
-        </a>
-    </nav>
-</footer>
-<!-- Scripts de Bootstrap -->
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer-container">
+        <p class="derechos">2025 Servicios Agro Maq. Todos los derechos reservados.</p>
+        <p class="dueño"> Creado por Palombo </p>
+        <nav class="social">
+            <a href="https://www.facebook.com/?locale=es_LA" target="_blank" title="Visítanos en Facebook">
+                <img src="./assets/facebook-box-fill.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank" title="Visítanos en Instagram">
+                <img src="./assets/instagram-line.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/?lang=es" target="_blank" title="Visítanos en Twitter">
+                <img src="./assets/twitter-line.png" alt="Twitter">
+            </a>
+        </nav>
+    </footer>
+    <!-- Scripts de Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
