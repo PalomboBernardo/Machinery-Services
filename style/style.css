@@ -72,21 +72,6 @@ header .navbar-toggler .navbar-toggler-icon {
   width: 30px;
   height: 30px;
 }
-@media (max-width: 768px) {
-  header .navbar-toggler {
-    display: block;
-  }
-  header .navbar-toggler .navbar-toggler-icon {
-    width: 25px;
-    height: 25px;
-  }
-}
-@media (max-width: 480px) {
-  header .navbar-toggler .navbar-toggler-icon {
-    width: 22px;
-    height: 22px;
-  }
-}
 header nav.navbar {
   background-color: transparent;
 }
@@ -96,14 +81,6 @@ header nav.navbar .container {
 header nav.navbar .container ul {
   display: flex;
   gap: 1rem;
-}
-@media (max-width: 768px) {
-  header nav.navbar .container ul {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 0.5rem;
-    gap: 0.5rem;
-  }
 }
 header .left-image img {
   width: 100%;
@@ -204,26 +181,6 @@ header nav .container ul li a:active {
 .img-whatsapp:hover {
   transform: scale(1.1);
   opacity: 1;
-}
-@media (max-width: 767.98px) {
-  .img-whatsapp {
-    bottom: 20px;
-    right: 20px;
-  }
-  .img-whatsapp img {
-    width: 50px;
-    height: 50px;
-  }
-}
-@media (max-width: 575.98px) {
-  .img-whatsapp {
-    bottom: 15px;
-    right: 15px;
-  }
-  .img-whatsapp img {
-    width: 45px;
-    height: 45px;
-  }
 }
 
 /* Estilos del main (contenido central) */
@@ -383,6 +340,7 @@ main .seccion-kml .kml-video {
   transform: scale(1.1);
 }
 
+/* Componentes */
 /* Responsivo */
 /* -------------------------------------------
     Importación de módulos base y layout
@@ -433,12 +391,26 @@ main .seccion-kml .kml-video {
     font-size: 1rem;
     padding: 8px;
   }
+}
+@media (max-width: 575.98px) {
   .img-whatsapp {
-    position: fixed;
     right: 3%;
     top: 65%;
-    bottom: 25px;
-    z-index: 100;
+    bottom: 15px;
+  }
+  .img-whatsapp img {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .img-whatsapp {
+    bottom: 20px;
+    right: 20px;
+  }
+  .img-whatsapp img {
+    width: 50px;
+    height: 50px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -499,7 +471,29 @@ main .seccion-kml .kml-video {
     max-width: 120px;
   }
 }
-/* Componentes */
+@media (max-width: 768px) {
+  header .navbar-toggler {
+    display: block;
+  }
+  header .navbar-toggler .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 480px) {
+  header .navbar-toggler .navbar-toggler-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (max-width: 768px) {
+  nav.navbar .container ul {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+    gap: 0.5rem;
+  }
+}
 /* -------------------------------------------
     Estilos adicionales globales
 ---------------------------------------------- */

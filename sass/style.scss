@@ -16,11 +16,13 @@
 @use "layout/main";
 @use "layout/footer";
 
+/* Componentes */
+@use "components/whatsapp";
+
 /* Responsivo */
 @use "media/media";
 
-/* Componentes */
-@use "components/whatsapp";
+
 
 /* -------------------------------------------
     Estilos adicionales globales

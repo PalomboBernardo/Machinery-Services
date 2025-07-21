@@ -60,13 +60,32 @@
             padding: 8px;
         }
     }
+}
 
+// Mobile: Hasta 575.98px
+@media (max-width: 575.98px) {
     .img-whatsapp {
-        position: fixed;
         right: 3%;
         top: 65%;
-        bottom: 25px;
-        z-index: 100;
+        bottom: 15px;
+
+        img {
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+
+// Small Devices: 576px–767.98px
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .img-whatsapp {
+        bottom: 20px;
+        right: 20px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
     }
 }
 
@@ -137,4 +156,43 @@
         max-width: 120px; // un poco más chico en celulares
     }
 }
+
+// Tablets y móviles (máx. 768px)
+@media (max-width: 768px) {
+    header {
+        .navbar-toggler {
+            display: block;
+
+            .navbar-toggler-icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+// Móviles pequeños (máx. 480px)
+@media (max-width: 480px) {
+    header {
+        .navbar-toggler {
+            .navbar-toggler-icon {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    nav.navbar {
+        .container {
+            ul {
+                flex-direction: column;
+                align-items: center;
+                padding-top: 0.5rem;
+                gap: 0.5rem;
+            }
+        }
+    }
+}
+
 

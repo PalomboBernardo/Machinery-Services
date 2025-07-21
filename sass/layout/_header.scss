@@ -48,22 +48,6 @@ header {
             width: 30px;
             height: 30px;
         }
-
-        @media (max-width: 768px) {
-            display: block;
-
-            .navbar-toggler-icon {
-                width: 25px;
-                height: 25px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .navbar-toggler-icon {
-                width: 22px;
-                height: 22px;
-            }
-        }
     }
 
     // Nav responsive (Bootstrap collapse)
@@ -76,15 +60,6 @@ header {
             ul {
                 display: flex;
                 gap: 1rem;
-            }
-
-            @media (max-width: 768px) {
-                ul {
-                    flex-direction: column;
-                    align-items: center;
-                    padding-top: 0.5rem;
-                    gap: 0.5rem;
-                }
             }
         }
     }
